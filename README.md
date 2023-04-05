@@ -32,7 +32,7 @@
 
 # 📖 [ptfl-trap-w3d3] <a name="about-project"></a>
 
-**[ptfl-trap-w3d3]** is an alternative version of the portfolio using Boostrap to learn
+**[ptfl-trap-w3d3]** is an alternative version of the portfolio using BootStrap  to learn
 about CSS frameworks and pre-processors
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -44,7 +44,7 @@ about CSS frameworks and pre-processors
   <ul>
     <li><a href="https://developer.mozilla.org/en/docs/Learn/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://getbootstrap.com/">Boostrap</a></li>
+    <li><a href="https://getbootstrap.com/">BootStrap </a></li>
   </ul>
 </details>
 
