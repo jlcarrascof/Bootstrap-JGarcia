@@ -34,3 +34,45 @@ html {
   scroll-behavior: smooth;
 }
 /* ----------------------- */
+
+.phone {
+  display: none;
+}
+
+body {
+  font-family: var(--ff);
+  background-color: var(--clr-primary);
+}
+
+header {
+  justify-content: space-between;
+  background-color: var(--clr-neutral-n0);
+}
+
+.logo {
+  color: var(--clr-primary-b400);
+}
+
+.navbar > * + * {
+  padding-left: 0.5rem;
+}
+
+.nav__item {
+  color: var(--clr-neutral-n600);
+}
+
+.hamburger {
+  align-self: center;
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 375px) {
+  .phone {
+    display: initial;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
