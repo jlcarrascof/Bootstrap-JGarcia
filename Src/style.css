@@ -85,6 +85,18 @@ header div {
 .media__icons {
   list-style-type: none;
 }
+
+/* PROJECTS */
+.projects {
+  padding: 7.125rem 1.5rem;
+  overflow-x: hidden;
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 375px) {
   .phone {
     display: initial;
