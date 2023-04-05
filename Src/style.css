@@ -17,3 +17,20 @@
   --clr-neutral-n800: #172b4d;
   --ff: "Poppins", sans-serif;
 }
+
+/* -------CSS reset------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* ----------------------- */
