@@ -249,6 +249,47 @@ header {
   color: var(--clr-neutral-n700);
 }
 
+#contact {
+  background-color: var(--clr-neutral-n0);
+}
+
+.contact-me {
+  gap: 12px;
+  background-color: var(--clr-primary-b400);
+  border-radius: 12.0625rem 0 0 0;
+  background-image: url("./../../assets/img/dk_contact\ form\ background\ shapes.svg");
+  background-size: 102% auto;
+  background-position: -45% 1vh;
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 6% 25vw;
+}
+
+.smaller-p {
+  max-width: 45ch;
+}
+
+.btn--submit {
+  background-color: var(--clr-neutral-n0);
+  color: var(--clr-primary-b400);
+  border-radius: 8px;
+  width: 9.88rem;
+  padding: 0.75rem 1rem;
+  justify-self: center;
+}
+
+#email,
+#msg,
+#name {
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--clr-neutral-n0);
+  border-radius: 8px;
+  line-height: 1.25rem;
+}
+
 @media screen and (max-width: 768px) {
   .phone {
     display: initial;
@@ -256,6 +297,11 @@ header {
 
   .desktop {
     display: none;
+  }
+
+  #about {
+    border-radius: 0 8.313rem 0 0;
+    padding: 5rem 1.125rem 2.5rem;
   }
 
   .sub-category {
@@ -266,5 +312,14 @@ header {
   #html,
   #css {
     width: 100%;
+  }
+
+  .contact-me {
+    background-color: var(--clr-primary-b400);
+    border-radius: 65px 0 0 0;
+    background-image: url("./../../assets/img/mb_contact\ form\ shapes-mobile.svg");
+    background-position: 105% 102%;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
   }
 }

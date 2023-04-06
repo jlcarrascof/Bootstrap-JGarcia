@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
-<body  data-bs-spy="scroll" data-bs-target="#navbar__menu" data-bs-offset="0" tabindex="0">
+<body  data-bs-spy="scroll" data-bs-target="#navbar__menu">
   <!-- HEADER -->
   <header id="home" class="sticky-top">
     <div class="container-lg d-flex pt-2 pb-2 justify-content-between">
@@ -63,7 +63,7 @@
 </section>
 
 <!-- PROJECTS -->
-<main id="portfolio" class="projects d-grid" data-bs-spy="scroll" data-bs-target="#navbar__menu" data-bs-offset="0" tabindex="0">
+<main id="portfolio" class="projects d-grid" data-bs-offset="0" tabindex="0">
   <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-3">
     <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
       <img class="phone" src="./assets/img/mb_Portfolio Snapshoot 1.svg" alt="Project preview">
@@ -161,7 +161,7 @@
 </main>
 
 <!-- ABOUT ME -->
-<section id="about" class="about-me-section container-fluid d-md-grid">
+<section id="about" class="about-me-section container-fluid d-md-grid"  data-bs-offset="0" tabindex="0">
   <div class="row gx-3">
     <div class="knowledge col-md-5 mb-md-5">
       <h2>About Myself</h2>
@@ -208,19 +208,21 @@
 </section>
 
 <!-- CONTACT ME -->
-<section id="contact" data-bs-spy="scroll" data-bs-target="#navbar__menu">
-  <div class="contact-me">
-    <h1>Contact me</h1>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
-    <form id="contact_form" class="contact-me__form" action="https://formspree.io/f/xnqyvppn" method="POST">
-      <label for="name" >
-        <input form="contact_form" placeholder="Type your name" type="text" id="name" name="name" maxlength="30" required>
+<section id="contact" data-bs-offset="0" tabindex="0" class="container-fluid d-md-flex flex-md-column justify-content-md-center align-content-md-center p-md-0 m-md-0">
+  <div class="contact-me container-md-fluid align-self-center d-sm-flex flex-sm-column align-items-sm-start d-md-grid align-content-md-center text-center">
+    <h2 class="h1">Contact me</h2>
+    <p class="p smaller-p text-center">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
+    <form id="contact_form" 
+      class="contact-me__form d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-start d-md-grid align-items-md-center text-center" 
+      action="https://formspree.io/f/xnqyvppn" method="POST">
+      <label for="name" class="form-label">
+        <input class="form-control" form="contact_form" placeholder="Type your name" type="text" id="name" name="name" maxlength="30" required>
       </label>
-      <label for="email" >
-        <input form="contact_form" placeholder="Type your email" type="email" id="email" name="email" required>
+      <label for="email" class="form-label">
+        <input class="form-control" form="contact_form" placeholder="Type your email" type="email" id="email" name="email" required>
       </label>
-      <label for="msg">
-        <textarea id="msg" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+      <label for="msg" class="form-label">
+        <textarea class="form-control" rows="6" id="msg" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
       </label>
       <button class="btn btn--submit" type="submit">Get in Touch</button>
     </form>
