@@ -35,6 +35,14 @@ html {
 }
 /* ----------------------- */
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .pl0 {
   padding-left: 0;
 }
@@ -52,8 +60,47 @@ header {
   background-color: var(--clr-neutral-n0);
 }
 
-header div {
-  justify-content: space-between;
+/* BUTTONS SETUP */
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid var(--clr-primary-b300);
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Text inside */
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1.0625rem, 1.4rem);
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--clr-primary-b400);
+  transition: 0.25s ease-in-out;
+}
+
+.btn:hover {
+  border-color: transparent;
+  background-color: var(--clr-primary-b400);
+  color: var(--clr-neutral-n0);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  transition: 0.25s ease-in-out;
+  transform: scale(1.15);
+}
+
+.btn:disabled {
+  background-color: transparent;
+  color: var(--clr-neutral-n5);
+  border: 1px solid var(--clr-neutral-n7);
+}
+
+.btn:active {
+  border-color: transparent;
+  background-color: var(--clr-primary-b1);
+  color: var(--clr-neutral-n0);
+  transition: 0.15s ease-in;
 }
 
 .logo {
@@ -76,16 +123,60 @@ header div {
 
 .headline {
   background-color: var(--clr-neutral-n0);
+  border-radius: 0 0 0 7rem;
 }
 
 .p {
   max-width: 75ch;
 }
 
-.media__icons {
-  list-style-type: none;
+/* PROJECTS */
+.projects {
+  padding: 7.125rem 1.5rem;
+  overflow-x: hidden;
+  gap: 4.5rem;
 }
-@media screen and (max-width: 375px) {
+
+.cover img {
+  width: 100%;
+  height: auto;
+}
+
+.canopy ul {
+  list-style: url(./../../assets/img/mb_li_dot.svg) outside;
+  color: var(--clr-neutral-n100);
+  font-size: clamp(0.5rem, 0.8125rem, 1rem);
+  gap: 2.8rem;
+}
+
+.canopy li {
+  width: calc(50% - 1.8rem);
+  white-space: nowrap;
+}
+
+.card-text {
+  max-width: 35ch;
+}
+
+.tech__wrapper {
+  padding-left: 0;
+  margin-left: 0;
+  gap: clamp(0.35rem, 0.5rem, 0.8rem);
+}
+
+.tech__wrapper a {
+  border-color: transparent;
+  background: var(--clr-primary-b50);
+  border-radius: 8px;
+  padding: 4px 12px;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.5rem, 0.75rem, 1.3rem);
+  color: var(--clr-primary-b400);
+}
+
+@media screen and (max-width: 768px) {
   .phone {
     display: initial;
   }
