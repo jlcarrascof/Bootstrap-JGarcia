@@ -17,15 +17,23 @@
   <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
-<body>
+<body  data-bs-spy="scroll" data-bs-target="#navbar__menu" data-bs-offset="0" tabindex="0">
   <!-- HEADER -->
-  <header class="sticky-top">
+  <header id="home" class="sticky-top">
     <div class="container-lg d-flex pt-2 pb-2 justify-content-between">
       <span class="logo navbar-brand h5">My Logo</span>
-      <nav class="navbar desktop">
-        <a href="#portfolio" rel="noopener noreferrer" class="nav__item">Portfolio</a>
-        <a href="#about" rel="noopener noreferrer" class="nav__item">About</a>
-        <a href="#contact" rel="noopener noreferrer" class="nav__item">Contact</a>
+      <nav id="navbar__menu" class="navbar desktop">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#portfolio" rel="noopener noreferrer" class="nav__item nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" rel="noopener noreferrer" class="nav__item nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" rel="noopener noreferrer" class="nav__item nav-link">Contact</a>
+          </li>
+        </ul>
       </nav>
       <nav class="phone">
         <button class="hamburger navbar-toggler-icon" type="button">
@@ -36,7 +44,7 @@
   </header>
 
  <!-- HEADLINE -->
- <section class="headline container-fluid p-5">
+ <section id="hero" class="headline container-fluid p-5">
   <h1 class="h1 fw-bold phone">I'm Junior Glad to see you!</h1>
   <h1 class="h1 fw-bold desktop">I'm Junior<br> Glad to see you!</h1>
   <p class="p">
@@ -55,8 +63,8 @@
 </section>
 
 <!-- PROJECTS -->
-<main id="portfolio" class="projects d-grid">
-  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-0">
+<main id="portfolio" class="projects d-grid" data-bs-spy="scroll" data-bs-target="#navbar__menu" data-bs-offset="0" tabindex="0">
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-3">
     <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
       <img class="phone" src="./assets/img/mb_Portfolio Snapshoot 1.svg" alt="Project preview">
       <img class="desktop" src="./assets/img/dk_Snapshoot Portfolio 1.svg" alt="Project preview">
@@ -80,12 +88,12 @@
     </div>
   </section>
 
-  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row-reverse p-0">
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row-reverse p-3">
     <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
       <img src="./assets/img/mb_Portfolio Snapshoot 2.svg" alt="Project preview" class="phone">
       <img src="./assets/img/dk_Snapshoot Portfolio 2.svg" alt="Project preview" class="desktop row-reverse">
     </figure>
-    <div class="card-body container p-4 m-0 align-items-end d-flex flex-column">
+    <div class="card-body container p-4 m-0 align-items-md-end align-items-sm-baseline d-flex flex-column">
       <h2 class="card-title h2 fw-bold">Multi-Post Stories</h2>
       <div class="d-flex flex-row canopy">
         <h3 class="h5 fw-bold">Canopy</h3>
@@ -104,7 +112,7 @@
     </div>
   </section>
 
-  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-0">
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-3">
     <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
       <img src="./assets/img/mb_Portfolio Snapshoot 3.svg" alt="Project preview" class="phone">
       <img src="./assets/img/dk_Snapshoot Portfolio 3.svg" alt="Project preview" class="desktop">
@@ -153,48 +161,56 @@
 </main>
 
 <!-- ABOUT ME -->
-<section id="about" class="about-me-section">
-  <div class="knowledge">
-    <h2>About Myself</h2>
-    <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience!
-      If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
-    <a href="#" rel="noreferrer noopener" class="lets-connect">LET'S CONNECT</a>
-      <ul class="media__icons">
-        <li><a target="_blank" rel="noreferrer noopener" href="https://github.com" class="media__icon"><img src="./assets/img/mb_Github icon.svg" alt="github"></a></li>
-        <li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com" class="media__icon"><img src="./assets/img/mb_Linkedin icon.svg" alt="linkedin"></a></li>
-        <li><a target="_blank" rel="noreferrer noopener" href="https://angel.co" class="media__icon"><img src="./assets/img/mb_angel_list icon.svg" alt="angelList"></a></li>
-        <li><a target="_blank" rel="noreferrer noopener" href="https://twitter.com" class="media__icon"><img src="./assets/img/mb_Twitter icon.svg" alt="twitter"></a></li>
-        <li><a target="_blank" rel="noreferrer noopener" href="https://medium.com" class="media__icon"><img src="./assets/img/mb_medium icon.svg" alt="medium"></a></li>
+<section id="about" class="about-me-section container-fluid d-md-grid">
+  <div class="row gx-3">
+    <div class="knowledge col-md-5 mb-md-5">
+      <h2>About Myself</h2>
+      <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience!
+        If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+      <a href="#" rel="noreferrer noopener" class="lets-connect">LET'S CONNECT</a>
+        <ul class="media__icons d-flex flex-row justify-content-between align-items-center gap-2 mt-1">
+          <li><a target="_blank" rel="noreferrer noopener" href="https://github.com" class="media__icon"><img src="./assets/img/mb_Github icon.svg" alt="github"></a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com" class="media__icon"><img src="./assets/img/mb_Linkedin icon.svg" alt="linkedin"></a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://angel.co" class="media__icon"><img src="./assets/img/mb_angel_list icon.svg" alt="angelList"></a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://twitter.com" class="media__icon"><img src="./assets/img/mb_Twitter icon.svg" alt="twitter"></a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://medium.com" class="media__icon"><img src="./assets/img/mb_medium icon.svg" alt="medium"></a></li>
+        </ul>
+      <button type="button" class="btn">Get my resume</button>
+    </div>
+    <div class="about-me col-md-7 mt-sm-5 mt-md-0">
+      <ul class="d-flex flex-column align-items-start">
+        <li class="category d-flex justify-content-between align-content-center py-4 pt-md-0">
+          <span>Languages</span>
+          <button type="button"><img src="./assets/img/mb_Icon-list-opened.svg" alt="list chevron"></button>
+        </li>
+        <li class="sub-category">
+          <ul class="">
+            <li id="js" class="d-flex gap-2 align-items-center my-2"><img src="./assets/img/mb_js-icon.svg" alt="javaScript icon">JavaScript</li>
+            <li id="html" class="d-flex gap-2 align-items-center my-2"><img src="./assets/img/mb_html-icon.svg" alt="html"><span>HTML</span></li>
+            <li id="css" class="d-flex gap-2 align-items-center my-2"><img src="./assets/img/mb_css-icon.svg" alt="html"><span>CSS</span></li>
+          </ul>
+        </li>
       </ul>
-    <button type="button" class="btn">Get my resume</button>
-  </div>
-  <div class="about-me">
-    <ul>
-      <li class="category">
-        <span>Languages</span>
-        <button type="button"><img src="./assets/img/mb_Icon-list-opened.svg" alt="list chevron"></button>
-      </li>
-      <li class="sub-category"><ul>
-        <li id="js"><img src="./assets/img/mb_js-icon.svg" alt="javaScript icon">JavaScript</li>
-        <li id="html"><img src="./assets/img/mb_html-icon.svg" alt="html"><span>HTML</span></li>
-        <li id="css"><img src="./assets/img/mb_css-icon.svg" alt="html"><span>CSS</span></li>
-      </ul></li>
-    </ul>
-    <ul>
-      <li class="category underline">
-        Frameworks
-        <button type="button"><img src="./assets/img/mb_Icon-list-closed.svg" alt="list chevron"></button>
-      </li>
-      <li class="category underline">
-        Skills
-        <button type="button"><img src="./assets/img/mb_Icon-list-closed.svg" alt="list chevron"></button>
-      </li>
-    </ul>
+      <ul>
+        <li class="category underline  d-flex justify-content-between align-content-center py-4">
+          Frameworks
+          <button class="d-flex justify-content-center align-items-center" type="button">
+            <img src="./assets/img/mb_Icon-list-closed.svg" alt="list chevron">
+          </button>
+        </li>
+        <li class="category underline  d-flex justify-content-between align-content-center py-4">
+          Skills
+          <button type="button">
+            <img src="./assets/img/mb_Icon-list-closed.svg" alt="list chevron">
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT ME -->
-<section id="contact">
+<section id="contact" data-bs-spy="scroll" data-bs-target="#navbar__menu">
   <div class="contact-me">
     <h1>Contact me</h1>
     <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
