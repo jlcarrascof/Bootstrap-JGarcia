@@ -20,12 +20,12 @@
 <body>
   <!-- HEADER -->
   <header class="sticky-top">
-    <div class="container-lg d-flex pt-2 pb-2">
+    <div class="container-lg d-flex pt-2 pb-2 justify-content-between">
       <span class="logo navbar-brand h5">My Logo</span>
       <nav class="navbar desktop">
-        <a href="#portfolio" rel="noopener noreferrer" class="nav__item text-decoration-none">Portfolio</a>
-        <a href="#about" rel="noopener noreferrer" class="nav__item text-decoration-none">About</a>
-        <a href="#contact" rel="noopener noreferrer" class="nav__item text-decoration-none">Contact</a>
+        <a href="#portfolio" rel="noopener noreferrer" class="nav__item">Portfolio</a>
+        <a href="#about" rel="noopener noreferrer" class="nav__item">About</a>
+        <a href="#contact" rel="noopener noreferrer" class="nav__item">Contact</a>
       </nav>
       <nav class="phone">
         <button class="hamburger navbar-toggler-icon" type="button">
@@ -44,8 +44,8 @@
     feature or website Look through some of my work and experience! If you like what you see and have a
     project you need coded, don't hesitate to contact me.
   </p>
-  <a href="#" rel="noreferrer noopener" class="lets-connect btn-link text-decoration-none">LET'S CONNECT</a>
-  <ul class="media__icons d-flex gap-3 pl0">
+  <a href="#" class="lets-connect">LET'S CONNECT</a>
+  <ul class="media__icons d-flex gap-3 pl0 mt-2">
     <li><a target="_blank" rel="noreferrer noopener" href="https://twitter.com" class="media__icon"><img src="./assets/img/mb_Twitter icon.svg" alt="twitter"></a></li>
     <li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com" class="media__icon"><img src="./assets/img/mb_Linkedin icon.svg" alt="linkedin"></a></li>
     <li><a target="_blank" rel="noreferrer noopener" href="https://medium.com" class="media__icon"><img src="./assets/img/mb_medium icon.svg" alt="medium"></a></li>
@@ -56,74 +56,75 @@
 
 <!-- PROJECTS -->
 <main id="portfolio" class="projects d-grid">
-  <div class="card container-lg flex-lg-fill flex-sm-column flex-md-row">
-    <figure class="cover card-img-top img-fluid">
-      <img src="./assets/img/mb_Portfolio Snapshoot 1.svg" alt="Project preview" class="phone">
-      <img src="./assets/img/dk_Snapshoot Portfolio 1.svg" alt="Project preview" class="desktop">
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-0">
+    <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
+      <img class="phone" src="./assets/img/mb_Portfolio Snapshoot 1.svg" alt="Project preview">
+      <img class="desktop" src="./assets/img/dk_Snapshoot Portfolio 1.svg" alt="Project preview">
     </figure>
-      <div class="card-body container-fluid">
-      <h2 class="card-title">Tonic</h2>
-      <h3>Canopy</h3>
-      <ul>
-        <li>Back End Dev</li>
-        <li>2015</li>
-      </ul>
+    <div class="card-body container p-4 m-0">
+      <h2 class="card-title h2 fw-bold">Tonic</h2>
+      <div class="d-flex flex-row canopy">
+        <h3 class="h5 fw-bold">Canopy</h3>
+        <ul class="d-flex flex-row justify-content-between align-items-center">
+          <li>Back End Dev</li>
+          <li>2015</li>
+        </ul>
+      </div>
       <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-      <ul class="tech__wrapper">
+      <ul class="tech__wrapper d-flex align-items-center justify-content-start">
         <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
         <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">css</a></li>
         <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
       </ul>
-      <a href="#" class="btn btn-primary">See Project</a>
+      <button type="button" class="btn btn-primary">See Project</button>
     </div>
-  </div>
-
-  <section class="project">
-    <figure class="cover">
-      <img src="./assets/img/mb_Portfolio Snapshoot 2.svg" alt="Project preview" class="project-image phone">
-      <img src="./assets/img/dk_Snapshoot Portfolio 2.svg" alt="Project preview" class="project-image desktop row-reverse">
-    </figure>
-    <div class="caption-wrapper">
-      <h2 class="project__title">Multi-Post Stories</h2>
-      <div class="canopy">
-        <h3>Canopy</h3>
-        <ul>
-          <li>Back End Dev</li>
-          <li>2015</li>
-        </ul>
-      </div>
-      <div class="project__summary">
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p></div>
-        <ul class="tech__wrapper">
-          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
-          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">css</a></li>
-          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
-        </ul>
-        <button type="button" class="project__see-more btn">See Project</button>
-      </div>
   </section>
-  <section class="project">
-    <figure class="cover">
-      <img src="./assets/img/mb_Portfolio Snapshoot 3.svg" alt="Project preview" class="project-image phone">
-      <img src="./assets/img/dk_Snapshoot Portfolio 3.svg" alt="Project preview" class="project-image desktop">
+
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row-reverse p-0">
+    <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
+      <img src="./assets/img/mb_Portfolio Snapshoot 2.svg" alt="Project preview" class="phone">
+      <img src="./assets/img/dk_Snapshoot Portfolio 2.svg" alt="Project preview" class="desktop row-reverse">
     </figure>
-    <div class="caption-wrapper">
-      <h2 class="project__title">Tonic</h2>
-      <div class="canopy">
-        <h3>Canopy</h3>
-        <ul>
+    <div class="card-body container p-4 m-0 align-items-end d-flex flex-column">
+      <h2 class="card-title h2 fw-bold">Multi-Post Stories</h2>
+      <div class="d-flex flex-row canopy">
+        <h3 class="h5 fw-bold">Canopy</h3>
+        <ul class="d-flex flex-row justify-content-between align-items-center">
           <li>Back End Dev</li>
           <li>2015</li>
         </ul>
       </div>
-      <div class="project__summary">
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p></div>
-        <ul class="tech__wrapper">
+        <p class="card-text mb-2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+        <ul class="tech__wrapper d-flex align-items-center justify-content-start">
           <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
           <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">css</a></li>
           <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
         </ul>
-        <button type="button" class="project__see-more btn">See Project</button>
+        <button type="button" class="btn btn-primary">See Project</button>
+    </div>
+  </section>
+
+  <section class="card container-lg flex-lg-fill flex-sm-column flex-md-row p-0">
+    <figure class="cover card-img-top img-fluid rounded-1 m-0 p-auto contain-sm">
+      <img src="./assets/img/mb_Portfolio Snapshoot 3.svg" alt="Project preview" class="phone">
+      <img src="./assets/img/dk_Snapshoot Portfolio 3.svg" alt="Project preview" class="desktop">
+    </figure>
+    <div class="card-body container p-4 m-0">
+      <h2 class="card-title h2 fw-bold">Tonic</h2>
+      <div class="d-flex flex-row canopy">
+        <h3 class="h5 fw-bold">Canopy</h3>
+        <ul class="d-flex flex-row justify-content-between align-items-center">
+          <li>Back End Dev</li>
+          <li>2015</li>
+        </ul>
+      </div>
+        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+        <ul class="tech__wrapper d-flex align-items-center justify-content-start">
+          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">css</a></li>
+          <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
+        </ul>
+        <button type="button" class="btn btn-primary">See Project</button>
       </div>
   </section>
   <section class="project">
@@ -140,8 +141,7 @@
           <li>2015</li>
         </ul>
       </div>
-      <div class="project__summary">
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p></div>
+        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
         <ul class="tech__wrapper">
           <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
           <li><a target="_blank" rel="noreferrer noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">css</a></li>
