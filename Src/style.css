@@ -212,12 +212,8 @@ header {
 }
 
 .category {
-  height: 4.5rem;
-}
-
-.category,
-.sub-category {
   width: 100%;
+  height: 4.5rem;
 }
 
 .category button {
@@ -244,11 +240,11 @@ header {
 #js,
 #html,
 #css {
-  width: 100%;
+  width: 12ch;
   padding: 0.75rem;
   background: var(--clr-neutral-n10);
   border-radius: 8px;
-  gap: 1rem;
+  gap: .5rem;
   font-size: clamp(0.75rem, 0.9375rem, 1.2rem);
   color: var(--clr-neutral-n700);
 }
@@ -262,4 +258,13 @@ header {
     display: none;
   }
 
+  .sub-category {
+    width: 100%;
+  }
+
+  #js,
+  #html,
+  #css {
+    width: 100%;
+  }
 }
